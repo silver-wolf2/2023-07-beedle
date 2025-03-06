@@ -1,13 +1,15 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-import "forge-std/Script.sol";
+//lib/openzeppelin-contracts/contracts/finance/VestingWallet.sol
+
+import "lib/forge-std/src/Script.sol";
 import "../src/Lender.sol";
 import "../src/Staking.sol";
 import "../src/Beedle.sol";
 
-import {WETH} from "solady/src/tokens/WETH.sol";
-import {VestingWallet} from "openzeppelin-contracts/contracts/finance/VestingWallet.sol";
+import {WETH} from "lib/solady/src/tokens/WETH.sol";
+import {VestingWallet} from "lib/openzeppelin-contracts/contracts/finance/VestingWallet.sol";
 
 contract LenderScript is Script {
     function run() public {
